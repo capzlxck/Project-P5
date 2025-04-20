@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover</title>
+    <style>
+        body {
+            background-color: #EBEC9E;
+            animation: fadeIn 3s ease-in;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .theweddingof {
+            font-size: 25px;
+            margin: 0;
+        }
+
+        .dika-putri {
+            color: #D29840;
+            font-weight: bold;
+            font-size: 36px;
+            margin: 10px;
+        }
+
+        .kotak {
+            padding: 10px;
+            border: 1px solid;
+            background-color: #DB9224;
+            border-radius: 20px;
+            margin: 20px 0;
+            max-width: 80%;
+        }
+
+        .ucapan {
+            margin: 0;
+            color: #000000;
+        }
+
+        .tamu-undangan {
+            margin: 10px 0;
+        }
+
+        .open {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .bukaundangan {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #DAA520;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .bukaundangan:hover {
+        padding: 11px;
+        background-color: #ba8d1c;
+    }
+
+        .email-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+    @media only screen and (max-width:767px) {
+    body{
+        width: 300px;
+        margin: 0 auto;
+    }     
+}
+    @media only screen and (min-width:767px) {
+    body{
+        width: 300px;
+        margin: 0 auto;
+    }    
+}
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <p class="theweddingof">The Wedding of</p>
+    <p class="dika-putri">Dika & Putri</p>
+    <div class="kotak">
+        <p class="ucapan">“Dengan memohon rahmat dan ridha Allah SWT, kami mengundang Anda untuk hadir di hari istimewa kami.”</p>
+    </div>
+    <div class="kepadayth">
+        <p>Kepada :<br>Bapak/Ibu/Saudara/i</p>
+    </div>
+    <div class="tamu-undangan">Tamu Undangan</div>
+    <div class="open">
+        <a href="quotes.html">
+            <button class="bukaundangan">
+                <img src="email.png" alt="Email" class="email-icon">Buka Undangan</button></a>
+    </div>
+</body>
+</html>

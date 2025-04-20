@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <style>
+        body {
+            background-color: #EBEC9E;
+            font-family: 'Inter', sans-serif;
+        }
+        .tittlequotes {
+            color: #D29840;
+            font-weight: bold;
+            font-size: 36px;
+        }
+        .quotes {
+            margin-top: 20px;
+            border: 1px solid;
+            background-color: #DB9224;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .kata-kata {
+            text-align: center;
+        }
+        .tombol {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .back1 {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #D9A679;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .back1:hover {
+            padding: 11px;
+            border-radius: 10px;
+            background-color: #8B4513;
+            color: white;
+        }
+        .mempelai {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #D9A679;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .mempelai:hover {
+            padding: 11px;
+            border-radius: 10px;
+            background-color: #8B4513;
+            color: white;
+        }
+        hr {
+            border: 1px solid black;
+            margin: 20px;
+        }
+        @media only screen and (max-width:767px) {
+            body {
+                width: 300px;
+                margin: 0 auto;
+            }    
+        }
+        @media only screen and (min-width:767px) {
+            body {
+                width: 300px;
+                margin: 0 auto;
+            }    
+        }
+        @keyframes moveInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-move-in {
+            animation: moveInFromBottom 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="kata-kata animate-move-in">
+        <p class="tittlequotes">Quotes</p>
+        <div class="quotes">
+            <p>وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا "</p>
+            <p>إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ "</p>
+            <p>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri supaya kamu merasa tenteram kepadanya, dan dijadikannya di antaramu rasa kasih dan sayang.” <br><br>(QS. Ar-Rum: 21)</p>
+            <hr>
+            <p>“Love is not just looking at each other, it’s looking in the same direction.” <br><br>(Antoine de Saint-Exupéry)</p>
+        </div>
+        <div class="tombol">
+        <a href="cover.html"><button class="back1">&lt;Kembali</button></a>
+        <a href="mempelai.html"><button class="mempelai">Mempelai ></button></a>
+    </div>
+</body>
+</html>

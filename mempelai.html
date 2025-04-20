@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mempelai</title>
+</head>
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #EBEC9E;
+    }
+    .kotak {
+        background-color: #DB9224;
+        border: 1px solid;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        width: 300px;
+    }
+    hr {
+        border: 1px solid black;
+        margin: 10px;
+        margin-bottom: 30px;
+    } 
+
+    .dika {
+        margin-top: 20px;
+    }
+    .tombol {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .kembali {
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #D9A679;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .kembali:hover {
+        padding: 11px;
+        border-radius: 10px;
+        background-color: #8B4513;
+        color: white;
+    }
+
+    .event {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #D9A679;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .event:hover {
+        padding: 11px;
+        border-radius: 10px;
+        background-color: #8B4513;
+        color: white;
+    }
+
+    @media only screen and (max-width:767px) {
+        body {
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+    @media only screen and (min-width:767px) {
+        body {
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+    @keyframes moveInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-move-in {
+            animation: moveInFromBottom 1s ease-out;
+        }
+</style>
+<body>
+    <div class="kotak animate-move-in">
+        <div class="isi">
+            <img src="Dika 1.png" alt="dika">
+            <p class="mempelai-pria">Muhammad Andika Maulana</p>
+            <p class="mempelai-pria">Putra Pertama dari Bapak Aji & Ibu Laura</p>
+            <br>
+            <hr>
+            <img src="una1.png" alt="una">
+            <p class="mempelai-wanita">Nadya Kheitna Putri</p>
+            <p class="mempelai-wanita">Putri Kedua dari Bapak Putra & Ibu Putri</p>
+        </div>
+    </div>
+    <div class="tombol">
+        <a href="quotes.html"><button class="kembali">&lt; Kembali</button></a>
+        <a href="event.html"><button class="event">Event ></button></a>
+    </div>
+</body>
+</html>

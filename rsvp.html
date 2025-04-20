@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP</title>
+    <style>
+        body {
+            background-color: #EBEC9E;
+            font-family: 'Inter', sans-serif;
+        }
+        .doadanucapan {
+            text-align: center;
+            color: #DB9224;
+            font-weight: bold;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        .isi {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .reservasi {
+            border: 1px solid;
+            background-color: #DB9224;
+            border-radius: 20px;
+            width: 300px;
+            margin: 0 auto;
+            height: 450px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .reservasi input, .reservasi select, .reservasi textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            color: black;
+        }
+        .reservasi input::placeholder, .reservasi textarea::placeholder {
+            color: #999;
+        }
+        .reservasi select option {
+            color: black;
+        }
+        .reservasi textarea {
+            height: 100px;
+        }
+        .reservasi button {
+            background-color: #8B4513;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .reservasi button:hover {
+            background-color: #A0522D;
+            color: white;
+            padding: 11px;
+        }
+        .tombol {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .tombolkembali, .tombolpenutup {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #D9A679;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    .tombolkembali:hover, .tombolpenutup:hover {
+        padding: 11px;
+        background-color: #8B4513;
+        color: white;
+    }
+    @keyframes moveInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-move-in {
+            animation: moveInFromBottom 1s ease-out;
+        }
+        @media only screen and (max-width: 767px) {
+    .grid-container {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 767px) {
+    .grid-container {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="titlersvp animate-move-in">
+        <p class="doadanucapan">Doa & Ucapan</p>
+        <p class="isi">Doa & Ucapan Anda merupakan karunia yang sangat berarti bagi kami.</p>
+    </div> 
+    <div class="reservasi animate-move-in">
+        <form>
+            <label for="nama">Nama Anda</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda"><br>
+
+            <label for="nohp">No. HP</label><br>
+            <input type="text" id="nohp" name="nohp" placeholder="Masukkan No. HP"><br>
+
+            <label for="hadir">Bersedia hadir di acara kami?</label><br>
+            <select id="hadir" name="hadir" required>
+                <option value="" disabled selected hidden>Isi Kehadiran Anda</option>
+                <option value="ya">Ya</option>
+                <option value="tidak">Tidak</option>
+                <option value="belum-pasti">Belum Pasti</option>
+            </select><br>
+
+            <label for="ucapan">Kirim Ucapan</label><br>
+            <textarea id="ucapan" name="ucapan" placeholder="Masukkan Ucapan Anda"></textarea><br>
+
+            <button type="submit">Kirim Ucapan</button>
+        </form>
+    </div>
+    <div class="tombol">
+        <a href="gift.html"><button class="tombolkembali">&lt;Kembali</button></a>
+        <a href="penutup.html"><button class="tombolpenutup">Penutup ></button></a>
+    </div>
+</body>
+</html>

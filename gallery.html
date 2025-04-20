@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #EBEC9E;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery {
+            color: #D29840;
+            text-align: center;
+            font-weight: bold;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        .grid-container {
+            border: 1px solid;
+            border-radius: 20px;
+            background-color: #D29840;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 20px;
+            padding: 30px;
+        }
+
+        .grid-container img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 0px auto;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 350px;
+            margin: auto;
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: #D29840;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: none;
+        }
+
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .dot-container {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        .tombol {
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .tombolkembali, .tombolgift {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #D9A679;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .tombolkembali:hover, .tombolgift:hover {
+            padding: 11px;
+            background-color: #8B4513;
+            color: white;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                width: 300px;
+                margin: 0 auto;
+            }
+        }
+        @media only screen and (min-width: 767px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                width: 300px;
+                margin: 0 auto;
+            }
+        }
+        @keyframes moveInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-move-in {
+            animation: moveInFromBottom 1s ease-out;
+        }
+
+        @keyframes moveInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveInFromRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-move-in-left {
+            animation: moveInFromLeft 1s ease-out;
+        }
+
+        .animate-move-in-right {
+            animation: moveInFromRight 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <p>Gallery</p>
+    </div>
+
+    <div class="grid-container animate-move-in">
+        <img src="una pic 1.png" alt="Image 1" class="animate-move-in-left">
+        <img src="una pic 2.png" alt="Image 2" class="animate-move-in-right">
+        <img src="una pic 3.jpg" alt="Image 3" class="animate-move-in-left">
+        <img src="una pic 4.png" alt="Image 4" class="animate-move-in-right">
+    </div>
+    <br>
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="una pic 1.png" alt="Foto 1">
+        </div>
+
+        <div class="slides">
+            <img src="una pic 2.png" alt="Foto 2">
+        </div>
+
+        <div class="slides">
+            <img src="una pic 3.jpg" alt="Foto 3">
+        </div>
+
+        <div class="slides">
+            <img src="una pic 4.png" alt="Foto 4">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div class="tombol">
+        <a href="event.html"><button class="tombolkembali">&lt;Kembali</button></a>
+        <a href="gift.html"><button class="tombolgift">Gift/Hadiah ></button></a>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+        setInterval(function() {
+            plusSlides(1);
+        }, 5000);
+    </script>
+</body>
+</html>

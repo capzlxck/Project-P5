@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift</title>
+</head>
+<style>
+    body {
+    font-family: 'Inter', sans-serif;
+    background-color: #EBEC9E;
+}
+.terimakasih {
+    text-align: center;
+    color: #D29840;
+    font-weight: bold;
+    font-size: 36px;
+}
+.gift {
+    color: #DB9224;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+.isi {
+    text-align: center;
+}
+.transfer {
+    border: 1px solid;
+    background-color: #DB9224;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+.dana-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gopay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagedana, .imagegopay {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.imageqrdana, .imageqrgopay {
+    margin-top: 10px;
+    border: 1px solid;
+}
+.isitransfer, .isitransfer1 {
+    color: black;
+    margin-bottom: 0px;
+}
+hr {
+    border: 1px solid black;
+    margin: 20px;
+}
+.tombol {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .tombolkembali, .tombolrsvp {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #D9A679;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .tombolkembali:hover, .tombolrsvp:hover {
+        padding: 11px;
+        background-color: #8B4513;
+        color: white;
+    }
+    @media only screen and (max-width: 767px) {
+    .transfer {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+    @media only screen and (min-width: 767px) {
+    .transfer {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+@keyframes moveInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-move-in {
+            animation: moveInFromBottom 1s ease-out;
+        }
+</style>
+<body>
+    <div class="ucapan animate-move-in">
+        <p class="terimakasih">Terima Kasih</p>
+        <p class="isi">Do’a restu keluarga, sahabat, serta rekan-rekan semua
+            di pernikahan kami sudah sangat cukup sebagai hadiah, tetapi jika memberi merupakan tanda kasih, kami dengan senang hati menerimanya dan tentunya semakin melengkapi kebahagiaan kami.</p>
+    </div>
+    <div class="transfer animate-move-in">
+        <div class="dana-container">
+            <img class="imagedana" src="dana.png" alt="dana">
+            <img class="imageqrdana" src="qrdana.jpg" width="150" alt="qrdana">
+        </div>
+        <p class="isitransfer">a/n Maulana</p>
+        <p class="isitransfer1">0815-2152-0010</p>
+        <hr>
+    <div class="gopay-container">
+        <img class="imagegopay" src="gopay.png" alt="gopay">
+        <img class="imageqrgopay" src="qrgopay.jpg" width="150" alt="qrgopay">
+        <p class="isitransfer">a/n Maulana</p>
+        <p class="isitransfer1">0815-2152-0010</p>
+    </div>
+    </div>  
+
+    <div class="tombol">
+        <a href="gallery.html"><button class="tombolkembali">&lt;Kembali</button></a>
+        <a href="rsvp.html"><button class="tombolrsvp">Reservasi & Ucapan ></button></a>
+    </div>  
+</body>
+</html>

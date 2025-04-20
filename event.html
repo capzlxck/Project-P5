@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<style>
+    
+    body {
+        background-color: #EBEC9E;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .container-countdown {
+            margin-top: 10px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: #DB9224;
+            width: 260px;
+        }
+
+        .countdown {
+            font-size: 20px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+    .akad {
+        margin-top: 20px;
+        border: 1px solid;
+        background-color: #DB9224;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 20px;
+        font-size: 36px;
+    }
+    .video {
+        border: 1px solid;
+        background-color: #DB9224;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 36px;
+    }
+    .isivideo {
+        font-size: 15px;
+    }
+    .detailakad {
+        font-size: 15px;
+        color: #FFD700;
+    }
+    .isiakad {
+        font-size: 15px;
+    }
+    .resepsi {
+        border: 1px solid;
+        background-color: #DB9224;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 36px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .detailresepsi {
+        font-size: 15px;
+        color: #FFD700;
+    }
+    .isiresepsi {
+        font-size: 15px;
+    }
+    .video {
+        margin-top: 30px;
+    }
+    .tombolvideo {
+        border-radius: 10px;
+        width: 100px;
+        padding: 10px;
+        background-color: #8B4513;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .tombolvideo:hover {
+        width: 100px;
+        padding: 12px;
+        border-radius: 10px;
+        background-color: #A0522D;
+        color: white;
+    }
+    .kembali {
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #D9A679;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .kembali:hover {
+        padding: 11px;
+        border-radius: 10px;
+        background-color: #8B4513;
+        color: white;
+    }
+    .gallery {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #D9A679;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .gallery:hover {
+        padding: 11px;
+        border-radius: 10px;
+        background-color: #8B4513;
+        color: white;
+    } 
+    .tombolakad {
+        background-color: #8B4513;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .tombolakad:hover {
+        padding: 11px;
+        border-radius: 10px;
+        color: white;
+        background-color: #A0522D;
+    }
+    .tombolresepsi {
+        background-color: #8B4513;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .tombolresepsi:hover {
+        padding: 11px;
+        border-radius: 10px;
+        color: white;
+        background-color: #A0522D;
+    }
+    .tombol {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    @media only screen and (max-width:767px) {
+    body{
+        width: 300px;
+        margin: 0 auto;
+    }    
+}
+@media only screen and (min-width:767px) {
+    body{
+        width: 300px;
+        margin: 0 auto;
+    }    
+}
+@keyframes moveInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-move-in {
+            animation: moveInFromBottom 1s ease-out;
+        }
+</style>
+<body>
+    <div class="container-countdown animate-move-in">
+        <p>Tanggal Pernikahan: <strong>14 Desember 2024</strong></p>
+        <div class="countdown" id="countdown"></div>
+    </div>
+    
+    <div class="akad animate-move-in">
+            <p>Akad</p>
+            <p class="detailakad">Tanggal/Hari :</p>
+            <p class="isiakad">Minggu, 14 September 2024</p>
+            <p class="detailakad">Jam :</p>
+            <p class="isiakad">09:00 - Selesai</p>
+            <p class="detailakad">Tempat :</p>
+            <p class="isiakad">Masjid Raya Sabilal Muhtadin</p>
+            <p class="isiakad">Jl. Jend Sudirman No.1, Antasan Besar, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70114</p>
+            <a href="https://maps.app.goo.gl/B8whsfK624RFUvC47"><button class="tombolakad">Kunjungi Lokasi</button></a> 
+        </div>
+
+        <div class="resepsi animate-move-in">
+            <p>Resepsi</p>
+            <p class="detailresepsi">Tanggal/hari : </p>
+            <p class="isiresepsi">14 September 2024</p>
+            <p class="detailresepsi">Jam :</p>
+            <p class="isiresepsi">11:00 - Selesai</p>
+            <p class="detailresepsi">Tempat :</p>
+            <p class="isiresepsi">Gedung Serbaguna Raya 1</p>
+            <p class="isiresepsi">Jl. Pangeran Hidayatullah, Benua Anyar, Kec. Banjarmasin Timur, Kota Banjarmasin, Kalimantan Selatan 70121</p>
+            <a href="https://maps.app.goo.gl/9am8jPZrrMU1P1M47"><button class="tombolresepsi">Kunjungi Lokasi</button></a> 
+        </div>
+
+        <div class="video animate-move-in">
+            <p>Video</p>
+            <p class="isivideo">Tekan tombol putar utuk melihat video</p>
+            <a href="video.html"><button class="tombolvideo">Putar</button></a>
+        </div>
+
+        <div class="tombol">
+            <a href="mempelai.html"><button class="kembali">&lt;Kembali</button></a>
+            <a href="gallery.html"><button class="gallery">Gallery ></button></a>
+        </div>
+
+        <script>
+            const weddingDate = new Date("Sep 14, 2024 00:00:00").getTime();
+    
+            const countdownInterval = setInterval(function() {
+                
+                const now = new Date().getTime();
+    
+                const timeDifference = weddingDate - now;
+    
+                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    
+                document.getElementById("countdown").innerHTML = days + " Hari " + hours + " Jam "
+                    + minutes + " Menit " + seconds + " Detik ";
+    
+                if (timeDifference < 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById("countdown").innerHTML = "Selamat, Hari Pernikahan Anda Sudah Tiba!";
+                }
+            }, 1000);
+        </script>
+</body>
+</html>

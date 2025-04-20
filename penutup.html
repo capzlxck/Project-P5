@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penutup</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #EBEC9E;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .penutup {
+            border: 1px solid;
+            background-color: #DB9224;
+            border-radius: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+        .dika-putri {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .keluarga-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+        }
+        .mempelai-pria, .mempelai-wanita {
+            font-weight: bold;
+            white-space: nowrap;
+            display: inline-block;
+            margin: 10px;
+        }
+        .turut-mengundang {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .tombol {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .tombolkembali {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #D9A679;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .tombolkembali:hover {
+            padding: 11px;
+            background-color: #8B4513;
+            color: white;
+        }
+        @media only screen and (max-width:767px) {
+    body{
+        width: 300px;
+        margin: 0 auto;
+    }     
+}
+    @media only screen and (min-width:767px) {
+    body{
+        width: 300px;
+        margin: 0 auto;
+    }    
+}
+@keyframes moveInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-move-in {
+            animation: moveInFromBottom 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="penutup animate-move-in">
+        <p>“Atas kehadiran dan doa restu yang Anda berikan, kami mengucapkan terima kasih yang sebesar-besarnya.”</p>
+
+        <div class="dika-putri">Dika & Putri</div>
+
+        <div class="keluarga-container">
+            <div class="keluarga-besar">
+                <p>Keluarga Besar</p>
+                <p class="mempelai-pria">Muhammad Andika Maulana</p>
+                <p>Bapak Aji & Ibu Laura</p>
+            </div>
+            <div class="keluarga-besar">
+                <p>Keluarga Besar</p>
+                <p class="mempelai-wanita">Nadya Kheitna Putri</p>
+                <p>Bapak Putra & Ibu Putri</p>
+            </div>
+        </div>
+
+        <div class="turut-mengundang">
+            <p>Turut Mengundang :</p>
+            <p>Keluarga Besar Bapak Ari & Ibu Ayu</p>
+            <p>Keluarga Besar Bapak Dewa & Ibu Dewi</p>
+            <p>Dan seluruh keluarga lainnya.</p>
+        </div>
+    </div>
+    <div class="tombol"></div>
+        <a href="cover.html"><button class="tombolkembali">&lt; Kembali ke cover</button></a>
+    </div>
+</body>
+</html>
